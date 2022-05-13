@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background-color: rgb(88, 25, 0);
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 40px repeat(4, 1fr);
+    border-radius: 20px;
+}
+
+#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+}
+
+.bill-check {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bill-check input {
+    width: 150px;
+    margin-top: -10px;
+    
+}
+
+.service-check {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.service-check select {
+    width: 150px;
+    margin-top: -10px;
+}
+
+.button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate {
+    width: 180px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+
+}
+
+.main-footer {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+    'a'
+    'a2'
+    'a3';
+}
+
+.final-bill {
+    padding-left: 20px;
+    font-size: 20px;
+    grid-area: a2;
+    margin-bottom: 0;
+}
+.final-total {
+    padding-left: 20px;
+    font-size: 20px;
+    grid-area: a3;
+}
+

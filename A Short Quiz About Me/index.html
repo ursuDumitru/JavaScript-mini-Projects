@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quiz about Dumitru</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="shadow-container">
+        <div class="loading-bar">
+            <div class="the-bar bar" data-bar1></div>
+            <div class="the-bar-loaded bar" data-bar></div>
+        </div>
+        
+        <div class="container">
+            <div class="first-page page">
+                <h1>Hello , this is a short quiz about Dumitru.</h1>
+                <button class="start" data-start>START</button>
+            </div>
+            <div class="pg-one page question-page not-show">
+                <h1>Cati ani are Dumitru ?</h1>
+                <button data-answer='wrong'>18</button>
+                <button data-answer='correct'>19</button>
+            </div>
+            <div class="pg-two page question-page not-show">
+                <h1>Unde isi face facultatea ?</h1>
+                <button data-answer='correct'>Timisoara</button>
+                <button data-answer='wrong'>Chisinau</button>
+            </div>
+            <div class="pg-three page question-page not-show">
+                <h1>In ce luna s-a nascut ?</h1>
+                <button data-answer='wrong'>Septembrie</button>
+                <button data-answer='correct'>August</button>
+            </div>
+            <div class="pg-four page question-page not-show">
+                <h1>Ce limbaj invata pe moment ?</h1>
+                <button data-answer='correct'>JavaScript</button>
+                <button data-answer='wrong'>Python</button>
+            </div>
+            <div class="pg-five page question-page not-show">
+                <h1>In ce scoala a invatat?</h1>
+                <button data-answer='wrong'>Petru Rares</button>
+                <button data-answer='correct'>Hyperion</button>
+            </div>
+            <div class="pg-six page question-page not-show">
+                <h1>Numele parintilor : </h1>
+                <button data-answer='correct'>Elena si Gheorghe</button>
+                <button data-answer='wrong'>Maria si Bogdan</button>
+            </div>
+            <div class="pg-seven page question-page not-show">
+                <h1>Cantareti preferati : </h1>
+                <button data-answer='correct'>Miyagi & Andshpieli</button>
+                <button data-answer='wrong'>Grasu XXL</button>
+            </div>
+            <div class="pg-eight page question-page not-show">
+                <h1>Prietenul cel mai bun : </h1>
+                <button data-answer='wrong'>Arthur</button>
+                <button data-answer='correct'>Stas</button>
+            </div>
+            <div class="pg-nine page question-page not-show">
+                <h1>Mancare preferata : </h1>
+                <button data-answer='correct'>Pizza</button>
+                <button data-answer='wrong'>Paste</button>
+            </div>
+            <div class="pg-ten page question-page not-show">
+                <h1>In ce an s-a mutat in Durlesti ?</h1>
+                <button data-answer='wrong'>2015</button>
+                <button data-answer='correct'>2014</button>
+            </div>
+            <div class="last-page page not-show">
+                <h1 data-h1></h1>
+                <h2 class="results" data-resultss></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

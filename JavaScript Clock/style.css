@@ -1,0 +1,107 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    background: linear-gradient(to right,#9DE99D,#8EFAF1);
+    min-height: 60vh;
+}
+.clock-container {
+    /* margin-top: 400px; */
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.60);
+    
+}
+
+.hour {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 30px;
+}
+
+.center-point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 11;
+    border: 2px solid white;
+}
+
+.curr-date {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    border: 2px solid black;
+    bottom: 105%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgba(255,255,255,.60);
+
+}
+
+#h1 {--rotation: 30deg; }
+#h2 {--rotation: 60deg; }
+#h3 {--rotation: 90deg; }
+#h4 {--rotation: 120deg; }
+#h5 {--rotation: 150deg; }
+#h6 {--rotation: 180deg; }
+#h7 {--rotation: 210deg; }
+#h8 {--rotation: 240deg; }
+#h9 {--rotation: 270deg; }
+#h10 {--rotation: 300deg; }
+#h11 {--rotation: 330deg; }
+
+.pointers {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    /* width: 10px; */
+    /* height: 50%; */
+    background-color: black;
+    transform-origin: bottom ;
+    transform: translateX(-50%) rotate(calc(var(--rotation)* 1deg));/* translates the object by 50% of its width backwards*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+}
+
+.hour-pointer {
+
+    width: 10px;
+    height: 40%;
+    border: 2px solid white;
+}
+
+.min-pointer {
+    width: 6px;
+    height: 30%;
+    border: 1px solid white;
+}
+
+.sec-pointer {
+    width: 4px;
+    height: 45%;
+    background-color: red;
+    border: 1px solid white;
+}

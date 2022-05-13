@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CCC;
+    
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 40px;
+}
+
+.computer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.computer-name , .computer-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    grid-template-areas: 
+    'pc results'
+    'you results';
+}
+
+.result {
+    grid-area: results;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.your-choice {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.YOU {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.your-score, .your-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 6rem;
+    transition: 100ms;
+}
+
+.buttons button:hover {
+    transform: scale(1.2);
+}
+
+
+
